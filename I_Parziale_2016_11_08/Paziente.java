@@ -7,20 +7,20 @@ package I_Parziale_2016_11_08;
 public class Paziente implements Comparable<Paziente> {
     private String codice;
     private int priorita;
-    private int id = 0;
+    private int id;
     static private int count = 0;
 
 
     public Paziente(String codice) {
         this.codice = codice;
         this.priorita = 0;
-        this.id = ++c;
+        this.id = ++count;
     }
 
     public Paziente(String codice, int priorita) {
         this.codice = codice;
         this.priorita = priorita;
-        this.id = ++c;
+        this.id = ++count;
     }
 
     public String getCodice() {

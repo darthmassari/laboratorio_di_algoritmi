@@ -1,4 +1,4 @@
-package Primo_Parziale_2022_11_17;
+package I_Parziale_2022_11_17;
 
 /**
  * Si consideri un Ospedale costituito da 10 reparti univocamente
@@ -11,7 +11,7 @@ package Primo_Parziale_2022_11_17;
 
 public class Paziente implements Comparable<Paziente> {
 
-    private String cf;
+    private final String cf;
     private int eta, reparto;
 
     public Paziente(String cf) {

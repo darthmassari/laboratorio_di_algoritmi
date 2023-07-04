@@ -1,4 +1,4 @@
-package Primo_Parziale_2022_11_17;
+package I_Parziale_2022_11_17;
 
 import java.util.ArrayList;
 import java.util.Collections;

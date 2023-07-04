@@ -1,4 +1,4 @@
-package Primo_Parziale_2014_12_02;
+package I_Parziale_2014_12_02;
 
 import java.util.LinkedList;
 import java.util.List;

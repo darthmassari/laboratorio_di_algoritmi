@@ -1,4 +1,4 @@
-package Primo_Parziale_2014_12_02;
+package I_Parziale_2014_12_02;
 
 /**
  * Realizzare una classe Moneta, i cui esemplari hanno un nome (nome della moneta, es: “Due

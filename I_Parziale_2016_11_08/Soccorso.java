@@ -22,7 +22,7 @@ import java.util.Iterator;
  * Se opportuno, sviluppare metodi ausiliari che vi facilitino la scrittura del codice dei metodi richiesti.
  */
 public class Soccorso {
-    private ArrayList<Paziente> attesa;
+    private final ArrayList<Paziente> attesa;
 
     public Soccorso() {
         attesa = new ArrayList<>();

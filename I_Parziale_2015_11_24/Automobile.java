@@ -1,4 +1,4 @@
-package Primo_Parziale_2015_11_24;
+package I_Parziale_2015_11_24;
 
 /**
  * Scrivere un programma che definisca ed utilizzi le classi ed i metodi necessari per gestire una
