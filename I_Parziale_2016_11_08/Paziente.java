@@ -12,13 +12,13 @@ public class Paziente implements Comparable<Paziente> {
 
 
     public Paziente(String codice) {
-        this.codice = codice;
+        this.codice = codice.toUpperCase();
         this.priorita = 0;
         this.id = ++count;
     }
 
     public Paziente(String codice, int priorita) {
-        this.codice = codice;
+        this.codice = codice.toUpperCase();
         this.priorita = priorita;
         this.id = ++count;
     }
@@ -28,7 +28,7 @@ public class Paziente implements Comparable<Paziente> {
     }
 
     public void setCodice(String codice) {
-        this.codice = codice;
+        this.codice = codice.toUpperCase();
     }
 
     public int getPriorita() {

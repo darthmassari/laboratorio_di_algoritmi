@@ -28,11 +28,11 @@ public class Soccorso {
         attesa = new ArrayList<>();
     }
 
-    public void ingresso (String codice, int priorita) {
+    public void ingresso(String codice, int priorita) {
         this.ingresso(new Paziente(codice, priorita));
     }
 
-    public void ingresso (Paziente paziente) {
+    public void ingresso(Paziente paziente) {
         int pos = 0;
         for (Paziente cur : attesa) {
             if (cur.compareTo(paziente) < 0) pos++;
@@ -50,15 +50,18 @@ public class Soccorso {
         Paziente cur = null;
         // cancella il paziente dalla lista, salvando in cur l'oggetto
         Iterator<Paziente> iter = attesa.iterator();
-        while(iter.hasNext()) {
+        while (iter.hasNext()) {
             cur = iter.next();
-            if(cur.equals(p)) {
+            if (cur.equals(p)) {
                 iter.remove();
                 break;
             }
         }
         if (cur == null) this.ingresso(p);
-        else  {cur.setPriorita(nuovaPriorita); this.ingresso(cur);}
+        else {
+            cur.setPriorita(nuovaPriorita);
+            this.ingresso(cur);
+        }
 
     }
 
