@@ -5,7 +5,7 @@ import melipack.network.weighted.Network;
 import java.util.Iterator;
 import java.util.Map;
 
-public class Ex2 <Vertex extends Comparable<? super Vertex> & Map.Entry<Vertex, Double>> extends Network<Vertex> {
+public class Ex2<Vertex extends Comparable<? super Vertex> & Map.Entry<Vertex, Double>> extends Network<Vertex> {
 
     public void transpose() {
         Iterator<Vertex> itr = adjacencyMap.keySet().iterator();
@@ -17,6 +17,7 @@ public class Ex2 <Vertex extends Comparable<? super Vertex> & Map.Entry<Vertex, 
                 removeEdge(v, u);
                 addEdge(u, v, weight);
             }
+            v = u;
         }
     }
 
