@@ -1,4 +1,4 @@
-package IV_Appello_2022_06_14;
+package Appelli.IV_Appello_2022_06_14;
 
 public class Prodotto implements Comparable<Prodotto> {
 
